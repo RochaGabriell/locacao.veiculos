@@ -16,7 +16,7 @@ public class Automovel {
 	private ArrayList<Locacao> locacoes;
 	
 	public Automovel() {
-		setLocacoes(new ArrayList<Locacao>());
+		 locacoes = new ArrayList<Locacao>();
 	}
 	
 	public String consultarAutomovel() {
