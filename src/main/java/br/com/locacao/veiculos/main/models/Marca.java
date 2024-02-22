@@ -7,6 +7,10 @@ public class Marca {
 	public Marca(String descricaoMarca) {
 		this.descricaoMarca = descricaoMarca;
 	}
+	
+	public String consultarMarca() {
+		return this.descricaoMarca;
+	}
 
 	/**
 	 * @return the descricaoMarca

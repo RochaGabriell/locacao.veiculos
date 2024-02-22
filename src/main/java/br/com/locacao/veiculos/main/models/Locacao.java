@@ -9,11 +9,16 @@ public class Locacao {
 	private Long quilometragemLocacao;
 	private Long quilometragemDevolucao;
 	private Long valorCaucao;
-	private Long valorLocacao;
+	private Double valorLocacao;
 	private Boolean locacaoDevolvida;
+	private Cliente cliente;
 	
 	public Locacao() {
 	}
+	
+	public int registrarLocacao() {
+        return 0;
+    }
 
 	/**
 	 * @return the dataHoraLocacao
@@ -88,14 +93,14 @@ public class Locacao {
 	/**
 	 * @return the valorLocacao
 	 */
-	public Long getValorLocacao() {
+	public Double getValorLocacao() {
 		return valorLocacao;
 	}
 
 	/**
 	 * @param valorLocacao the valorLocacao to set
 	 */
-	public void setValorLocacao(Long valorLocacao) {
+	public void setValorLocacao(Double valorLocacao) {
 		this.valorLocacao = valorLocacao;
 	}
 
@@ -111,5 +116,19 @@ public class Locacao {
 	 */
 	public void setLocacaoDevolvida(Boolean locacaoDevolvida) {
 		this.locacaoDevolvida = locacaoDevolvida;
+	}
+
+	/**
+	 * @return the cliente
+	 */
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	/**
+	 * @param cliente the cliente to set
+	 */
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 }

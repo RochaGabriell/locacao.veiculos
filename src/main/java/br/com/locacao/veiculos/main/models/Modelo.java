@@ -3,9 +3,16 @@ package br.com.locacao.veiculos.main.models;
 public class Modelo {
 		
 	private String descricaoModelo;
+	private Marca marca;
 	
-	public Modelo(String descricaoModelo) {
-		this.setDescricaoModelo(descricaoModelo);
+	public Modelo(String descricaoModelo, Marca marca) {
+		this.descricaoModelo = descricaoModelo;
+		this.marca = marca ;
+	}
+	
+	public String consultarModelo() {
+		return this.descricaoModelo + "\n" + 
+					"Marca: " + this.marca.getDescricaoMarca();
 	}
 
 	/**
@@ -20,6 +27,20 @@ public class Modelo {
 	 */
 	public void setDescricaoModelo(String descricaoModelo) {
 		this.descricaoModelo = descricaoModelo;
+	}
+
+	/**
+	 * @return the marca
+	 */
+	public Marca getMarca() {
+		return marca;
+	}
+
+	/**
+	 * @param marca the marca to set
+	 */
+	public void setMarca(Marca marca) {
+		this.marca = marca;
 	}
 
 }	

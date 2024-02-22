@@ -10,6 +10,14 @@ public class Cliente {
 	
 	public Cliente() {
 	}
+	
+	public String consultarCliente() {
+		return "CPF: " + this.cpfCliente + "\n" +
+					"Nome: " + this.nomeCliente + "\n" +
+					"Endereço: " + this.enderecoCliente + "\n" +
+					"Telefone: " + this.telefoneCliente + "\n" +
+					"Email: " + this.emailCliente;
+	}
 
 	/**
 	 * @return the cpfCliente

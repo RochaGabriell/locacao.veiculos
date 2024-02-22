@@ -1,5 +1,7 @@
 package br.com.locacao.veiculos.main.models;
 
+import java.util.ArrayList;
+
 public class Automovel {
 
 	private String placaAutomovel;
@@ -10,8 +12,23 @@ public class Automovel {
 	private Integer tipoCombustivelAutomovel;
 	private Long quilometragemAutomovel;
 	private Double valorLocacaoAutomovel;
+	private Modelo modelo;
+	private ArrayList<Locacao> locacoes;
 	
 	public Automovel() {
+		setLocacoes(new ArrayList<Locacao>());
+	}
+	
+	public String consultarAutomovel() {
+		return "Placa: " + placaAutomovel + "\n" +
+	               "Renavam: " + renavamAutomovel + "\n" +
+	               "Classificação: " + classiAutomovel + "\n" +
+	               "Cor: " + corAutomovel + "\n" +
+	               "Número de Portas: " + numeroPortasAutomovel + "\n" +
+	               "Tipo de Combustível: " + tipoCombustivelAutomovel + "\n" +
+	               "Quilometragem: " + quilometragemAutomovel + "\n" +
+	               "Valor de Locação: " + valorLocacaoAutomovel + "\n" +
+	               "Modelo: " + modelo.consultarModelo();
 	}
 
 	/**
@@ -124,5 +141,33 @@ public class Automovel {
 	 */
 	public void setValorLocacaoAutomovel(Double valorLocacaoAutomovel) {
 		this.valorLocacaoAutomovel = valorLocacaoAutomovel;
-	}	
+	}
+	
+	/**
+	 * @return the modelo
+	 */
+	public Modelo getModelo() {
+		return modelo;
+	}
+
+	/**
+	 * @param modelo the modelo to set
+	 */
+	public void setModelo(Modelo modelo) {
+		this.modelo = modelo;
+	}
+
+	/**
+	 * @return the locacoes
+	 */
+	public ArrayList<Locacao> getLocacoes() {
+		return locacoes;
+	}
+
+	/**
+	 * @param locacoes the locacoes to set
+	 */
+	public void setLocacoes(ArrayList<Locacao> locacoes) {
+		this.locacoes = locacoes;
+	}
 }
