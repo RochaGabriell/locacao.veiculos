@@ -5,9 +5,7 @@ public class Modelo {
 	private String descricaoModelo;
 	private Marca marca;
 	
-	public Modelo(String descricaoModelo, Marca marca) {
-		this.descricaoModelo = descricaoModelo;
-		this.marca = marca ;
+	public Modelo() {
 	}
 	
 	public String consultarModelo() {

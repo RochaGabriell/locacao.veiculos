@@ -12,6 +12,7 @@ public class Locacao {
 	private Double valorLocacao;
 	private Boolean locacaoDevolvida;
 	private Cliente cliente;
+	private Automovel automovel;
 	
 	public Locacao() {
 	}
@@ -130,5 +131,19 @@ public class Locacao {
 	 */
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+
+	/**
+	 * @return the automovel
+	 */
+	public Automovel getAutomovel() {
+		return automovel;
+	}
+
+	/**
+	 * @param automovel the automovel to set
+	 */
+	public void setAutomovel(Automovel automovel) {
+		this.automovel = automovel;
 	}
 }

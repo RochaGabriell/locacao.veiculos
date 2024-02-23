@@ -11,9 +11,12 @@ public class Main {
 
     public static void main(String[] args) {
     	
-    	Marca marca = new Marca("Honda ");
+    	Marca marca = new Marca();
+    	marca.setDescricaoMarca("Honda ");
 
-        Modelo modelo = new Modelo("Sedan", marca);
+        Modelo modelo = new Modelo();
+        modelo.setDescricaoModelo("Sedan");
+        modelo.setMarca(marca);
 
         Automovel automovel = new Automovel();
         automovel.setModelo(modelo);

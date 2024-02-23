@@ -1,11 +1,13 @@
 package br.com.locacao.veiculos.main.models;
-	
+
+import java.util.ArrayList;
+
 public class Marca {
 		
 	private String descricaoMarca;
+	private ArrayList<Modelo> modelo;
 	
-	public Marca(String descricaoMarca) {
-		this.descricaoMarca = descricaoMarca;
+	public Marca() {
 	}
 	
 	public String consultarMarca() {
@@ -24,5 +26,19 @@ public class Marca {
 	 */
 	public void setDescricaoMarca(String descricaoMarca) {
 		this.descricaoMarca = descricaoMarca;
+	}
+
+	/**
+	 * @return the modelo
+	 */
+	public ArrayList<Modelo> getModelo() {
+		return modelo;
+	}
+
+	/**
+	 * @param modelo the modelo to set
+	 */
+	public void setModelo(ArrayList<Modelo> modelo) {
+		this.modelo = modelo;
 	}
 }
